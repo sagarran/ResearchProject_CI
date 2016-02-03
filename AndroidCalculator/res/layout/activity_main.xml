@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.androidcalculator.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+    
+    <EditText android:layout_height="wrap_content" android:id="@+id/number1"
+        android:hint="@string/hint1" android:inputType="numberDecimal"
+        android:layout_width="fill_parent" android:textSize="48px"></EditText>
+    
+    <EditText android:layout_height="wrap_content" android:id="@+id/number2"
+        android:hint="@string/hint2" android:inputType="numberDecimal"
+        android:layout_width="fill_parent" android:textSize="48px"></EditText>
+    
+    <FrameLayout android:id="@+id/FrameLayout01"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:padding="12px" android:background="#ff0000">
+        
+        <LinearLayout android:id="@+id/LinearLayout02"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:background="#000000"
+            android:padding="4px">
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/resultLabel"
+                android:textSize="48px" android:id="@+id/resultLabel"></TextView>
+            
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/result"
+                android:textSize="48px" android:textStyle="bold"
+                android:layout_marginLeft="16px"></TextView>
+            
+        </LinearLayout>
+        </FrameLayout>
+        
+    <LinearLayout android:id="@+id/LinearLayout03"
+        android:layout_height="wrap_content" android:layout_width="fill_parent">
+
+        <Button android:id="@+id/addNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/add"
+            android:textSize="32px"> </Button>
+
+        <Button android:id="@+id/multiplyNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/multiply"
+            android:textSize="32px"> </Button>
+
+        <Button android:id="@+id/subtractNumbers"
+            android:text="@string/subtract"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="32px"> </Button>
+        
+        <Button android:id="@+id/divideNumbers"
+            android:text="@string/divide" 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="32px"> </Button>
+            
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AndroidCalculator</string>
+    <string name="hello">Welcome</string>
+    <string name="hint1">Enter number...</string>
+    <string name="hint2">Enter number two...</string>
+    <string name="multiply">Multiply Numbers</string>
+    <string name="add">Add Numbers</string>
+    <string name="subtract">Subtract Numbers</string>
+    <string name="divide">Divide Numbers</string>
+    <string name="resultLabel">Result: </string>
+    <string name="action_settings">Settings</string>
+
+</resources>
